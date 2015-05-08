@@ -11,7 +11,7 @@ module.exports = function (grunt) {
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
-  grunt.loadNpmTasks('grunt-karma-coveralls');
+  grunt.loadNpmTasks('grunt-coveralls');
 
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
@@ -424,11 +424,10 @@ module.exports = function (grunt) {
 
     coveralls: {
       options: {
-        debug: true,
-        coverageDir: 'coverage/',
-        dryRun: true,
         force: true,
-        recursive: true
+      },
+      repoMaticApp: {
+        src: 'coverage/**/*.info'
       }
     }
   });
