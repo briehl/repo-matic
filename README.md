@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/briehl/repo-matic.svg)](https://travis-ci.org/briehl/repo-matic)
+
 # repo-matic
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
