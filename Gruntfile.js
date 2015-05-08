@@ -8,9 +8,10 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
-
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
+
+  grunt.loadNpmTasks('grunt-karma-coveralls');
 
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
@@ -419,6 +420,16 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+
+    coveralls: {
+      options: {
+        debug: true,
+        coverageDir: 'coverage/',
+        dryRun: true,
+        force: true,
+        recursive: true
+      }
     }
   });
 
@@ -449,7 +460,8 @@ module.exports = function (grunt) {
     'concurrent:test',
     'autoprefixer',
     'connect:test',
-    'karma'
+    'karma',
+    'coveralls'
   ]);
 
   grunt.registerTask('build', [
