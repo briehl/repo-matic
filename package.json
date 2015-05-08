@@ -39,7 +39,8 @@
     "karma-webpack": "^1.5.1",
     "karma-phantomjs-launcher": "^0.1.4",
     "phantomjs": "^1.9.16",
-    "karma-coverage": "^0.3.1"
+    "karma-coverage": "^0.3.1",
+    "grunt-karma-coveralls": "^2.5.3"
   },
   "engines": {
     "node": ">=0.10.0"
