@@ -4,7 +4,7 @@ module.exports = function(config) {
     basePath: '../',
     frameworks: ['jasmine'],
     autoWatch: false,
-    browsers: ['Chrome', 'PhantomJS'],
+    browsers: ['PhantomJS'],
     files: [
         // angular libs
         'bower_components/jquery/dist/jquery.js',
