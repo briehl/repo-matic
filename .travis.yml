@@ -14,4 +14,3 @@ install:
   - npm install
   - bower install
 before_script: grunt build
-after_success: coveralls

@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/briehl/repo-matic.svg)](https://travis-ci.org/briehl/repo-matic)
+[![Coverage Status](https://coveralls.io/repos/briehl/repo-matic/badge.svg?branch=master)](https://coveralls.io/r/briehl/repo-matic?branch=master)
+
 
 # repo-matic
 
